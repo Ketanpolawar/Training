@@ -138,38 +138,29 @@ def rev(a):
 
 
 ##custom problem take it  as an assignment 
-# def reverser(s,i,j):
+# def func(s,num):
+#     s="vwxyzty"
+#     s1 = s[len(s) - num:]
+#     str=""
 #     str1=""
-#     if i>j:
-#         return 0
-#     else:
-#         for i in range(j,-1,-1):
-#             str1=str1+s[i]
-#         print(str1)
+#     limit=len(s)-num+1
+#     for i in range(num-1,limit):
+#         str=str+s[i]
+#     str2=rev(str)
+#     for i in range (num-1):
+#         str1=str1+s[i]
+#     str1=str1+str2
+#     x=len(s)-len(str1)
+#     for i in range(x):
+#         str1=str1+s1[i]
+#     return(str1)
 
-def func(s,num):
-    s="vwxyzty"
-    s1 = s[len(s) - num:]
-    str=""
-    str1=""
-    limit=len(s)-num+1
-    for i in range(num-1,limit):
-        str=str+s[i]
-    str2=rev(str)
-    for i in range (num-1):
-        str1=str1+s[i]
-    str1=str1+str2
-    x=len(s)-len(str1)
-    for i in range(x):
-        str1=str1+s1[i]
-    return(str1)
-
-num=[2,2]
-s="vwxyzty"
-s2=func(s,2)
-s3=func(s2,2)
-print(s2)
-print(s3)
+# num=[2,2]
+# s="vwxyzty"
+# s2=func(s,2)
+# s3=func(s2,2)
+# print(s2)
+# print(s3)
 
 
 
