@@ -84,15 +84,11 @@
 
 #Palindrome String 
 
-# a="keokek"
-# b=""
-# for i in range(len(a)-1,-1,-1):
-#     b=b+a[i]
-# print(b)
-# if(a==b):
-#     print("it is palindrome")
-# else:
-#     print("it is not a palindrome")
+def rev(a):
+    b=""
+    for i in range(len(a)-1,-1,-1):
+        b=b+a[i]
+    return(b)
 
 
 #or
@@ -150,11 +146,34 @@
 #         for i in range(j,-1,-1):
 #             str1=str1+s[i]
 #         print(str1)
-# num=[2,2]
-# string="vwxyz"
-# limit1=len(string)+num[0]+1
-# limit2=len(string)+num[1]+1
-# reverser(string,2,limit1)
+
+def func(s,num):
+    s="vwxyzty"
+    s1 = s[len(s) - num:]
+    str=""
+    str1=""
+    limit=len(s)-num+1
+    for i in range(num-1,limit):
+        str=str+s[i]
+    str2=rev(str)
+    for i in range (num-1):
+        str1=str1+s[i]
+    str1=str1+str2
+    x=len(s)-len(str1)
+    for i in range(x):
+        str1=str1+s1[i]
+    return(str1)
+
+num=[2,2]
+s="vwxyzty"
+s2=func(s,2)
+s3=func(s2,2)
+print(s2)
+print(s3)
+
+
+
+
 
 #the sum divisiable by 5 
 #by brute force method 
