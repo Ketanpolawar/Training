@@ -62,20 +62,39 @@
 
 
 #maximum sum of array subarray with fixed size
-o=[1,2,3,4,5,6,7]
-N=2
-i=0
-j=i+N
-s=[]
 
-while(j<=len(o)):
-    sum=0
-    for p in range(i,j):
-        sum=sum+o[p]
-        s.append(sum)
-    sum
 
-    i=i+1
-    j=i+N
-print(max(s))
+#o=[1,2,3,4,5,6,7]
+# N=2
+# i=0
+# j=i+N
+# s=[]
+
+# while(j<=len(o)):
+#     sum=0
+#     for p in range(i,j):
+#         sum=sum+o[p]
+#         s.append(sum)
+#     sum
+
+#     i=i+1
+#     j=i+N
+# print(max(s))
+
+
+#Palindrome String 
+
+a="keek"
+b=""
+for i in range(len(a)-1,-1,-1):
+    b=b+a[i]
+print(b)
+if(a==b):
+    print("it is palindrome")
+else:
+    print("it is not a palindrome")
+
+
+
+
 
