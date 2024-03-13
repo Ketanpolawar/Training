@@ -32,30 +32,50 @@
 
 #problem 3 circular list subarray sum 
 
-a=[3,5,-6,-9]
-sum1=0
-sum2=0
-sum3=0
-m1=float('-inf')
-m2=float('inf')
-for i in a:
-    sum1=sum1+i
-    m1=max(sum1,m1)
-    if(sum1<0):#required if sum becomes -ve
-        sum1=0
-e=(m1)
-for i in a:
-    sum2=sum2+i
-    m2=min(sum2,m2)
-    if(sum2>0):#required if sum becomes -ve
-        sum2=0
-(m2)
-for i in a:
-    sum3=sum3+i
-d=(sum3+(-m2))
-if sum3==m2:
-    print(m1)
+# a=[3,5,-6,-9]
+# sum1=0
+# sum2=0
+# sum3=0
+# m1=float('-inf')
+# m2=float('inf')
+# for i in a:
+#     sum1=sum1+i
+#     m1=max(sum1,m1)
+#     if(sum1<0):#required if sum becomes -ve
+#         sum1=0
+# e=(m1)
+# for i in a:
+#     sum2=sum2+i
+#     m2=min(sum2,m2)
+#     if(sum2>0):#required if sum becomes -ve
+#         sum2=0
+# (m2)
+# for i in a:
+#     sum3=sum3+i
+# d=(sum3+(-m2))
+# if sum3==m2:
+#     print(m1)
  
-else:
-    print(max(d,e))
+# else:
+#     print(max(d,e))
+
+
+
+#maximum sum of array subarray with fixed size
+o=[1,2,3,4,5,6,7]
+N=2
+i=0
+j=i+N
+s=[]
+
+while(j<=len(o)):
+    sum=0
+    for p in range(i,j):
+        sum=sum+o[p]
+        s.append(sum)
+    sum
+
+    i=i+1
+    j=i+N
+print(max(s))
 
