@@ -84,7 +84,7 @@
 
 #Palindrome String 
 
-# a="keek"
+# a="keokek"
 # b=""
 # for i in range(len(a)-1,-1,-1):
 #     b=b+a[i]
@@ -115,6 +115,33 @@
 #     print("it is not a palandrome")
     
     
+
+#palindromic substrings
+# def countSubstrings(s):
+#         ans = 0
+#         for i in range (len(s)):
+#             ans = ans+ grow(s,i,i)
+#             ans = ans + grow(s,i,i+1)
+#         print(ans)
+
+# def grow(str,left,right):
+#     count  =0
+#     while(left>=0 and right<len(str)):
+#         if(str[left]==str[right]):
+#             count+=1
+#             left-=1
+#             right+=1
+#         else:
+#             break
+        
+
+#     return count
+
+# str = "aaa" 
+# countSubstrings(str)
+
+
+
 
 
 
