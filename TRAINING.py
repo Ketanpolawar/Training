@@ -160,8 +160,39 @@
 #by brute force method 
 
         
+#printing all the substrings with sum k
+# a=[1,2,3,4,5,6]
+# l=[]
+# k=5
+# i=0
+# j=0
+# for i in range(0,len(a)-1):
+#     sum=0
+#     for j in range(i,len(a)-1):
+#             sum=sum+a[j]
+#             if sum==k :
+#                l.append(sum)     
+# print(l)
+    
 
 
+
+# nums=[4,5,0,-2,-3,1]
+# k=5
+# prefix=[0]
+# rem={}
+# count=0
+# for i in nums:
+#     prefix.append(prefix[-1]+i)
+# for i in prefix:
+#     if i%k in rem:
+#         count=count+rem[i%k]
+#         value=rem[i%k]+1
+#         rem.update({i%k:value})
+#     else:
+#         #adding the key value pair in the dictonary
+#         rem[i%k]=1
+# print(count)
 
 
 
