@@ -141,6 +141,31 @@
 # countSubstrings(str)
 
 
+##custom problem take it  as an assignment 
+# def reverser(s,i,j):
+#     str1=""
+#     if i>j:
+#         return 0
+#     else:
+#         for i in range(j,-1,-1):
+#             str1=str1+s[i]
+#         print(str1)
+# num=[2,2]
+# string="vwxyz"
+# limit1=len(string)+num[0]+1
+# limit2=len(string)+num[1]+1
+# reverser(string,2,limit1)
+
+#the sum divisiable by 5 
+#by brute force method 
+
+        
+
+
+
+
+
+
 
 
 
