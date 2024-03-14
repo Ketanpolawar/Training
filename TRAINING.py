@@ -84,11 +84,11 @@
 
 #Palindrome String 
 
-def rev(a):
-    b=""
-    for i in range(len(a)-1,-1,-1):
-        b=b+a[i]
-    return(b)
+# def rev(a):
+#     b=""
+#     for i in range(len(a)-1,-1,-1):
+#         b=b+a[i]
+#     return(b)
 
 
 #or
@@ -138,16 +138,26 @@ def rev(a):
 
 
 ##custom problem take it  as an assignment 
+
+
+# def rev(a):
+#     b=""
+#     for i in range(len(a)-1,-1,-1):
+#         b=b+a[i]
+#     return(b)
+
+
 # def func(s,num):
-#     s="vwxyzty"
 #     s1 = s[len(s) - num:]
 #     str=""
 #     str1=""
 #     limit=len(s)-num+1
-#     for i in range(num-1,limit):
+#     if limit<num-1:
+#          return -1
+#     for i in range(num,limit-1):
 #         str=str+s[i]
 #     str2=rev(str)
-#     for i in range (num-1):
+#     for i in range (num):
 #         str1=str1+s[i]
 #     str1=str1+str2
 #     x=len(s)-len(str1)
@@ -156,11 +166,10 @@ def rev(a):
 #     return(str1)
 
 # num=[2,2]
-# s="vwxyzty"
-# s2=func(s,2)
-# s3=func(s2,2)
-# print(s2)
-# print(s3)
+# s="ketanPolawar"
+# sout=func(s,2)
+# sin=func(sout,2)
+# print(sin)
 
 
 
@@ -204,6 +213,24 @@ def rev(a):
 #         rem[i%k]=1
 # print(count)
 
+
+
+# nums=[4,5,0,-2,-3,1]
+# k=5
+# prefix=[0]
+# rem={}
+# count=0
+# for i in nums:
+#     prefix.append(prefix[-1]+i)
+# for i in prefix:
+#     if i%k in rem:
+#         count=count+rem[i%k]
+#         value=rem[i%k]+1
+#         rem.update({i%k:value})
+#     else:
+#         #adding the key value pair in the dictonary
+#         rem[i%k]=1
+# print(count)
 
 
 
