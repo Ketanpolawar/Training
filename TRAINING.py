@@ -210,7 +210,7 @@
 #         rem.update({i%k:value})
 #     else:
 #         #adding the key value pair in the dictonary
-#         rem[i%k]=1
+#         rem[i%k]=1+
 # print(count)
 
 
@@ -231,6 +231,39 @@
 #         #adding the key value pair in the dictonary
 #         rem[i%k]=1
 # print(count)
+
+
+# Recurssion 
+# def func(num):
+#     if num==1:
+#         print(num)
+#         num=5
+#         return 1
+#     else:
+#         print(num)
+#         return(func(num-1))
+# func(5)
+#Recurssion
+# def print1(start,end):
+#     if(start>end):
+#         return
+#     print(start)
+#     print1(start+1,end)
+#     print(start)
+# print1(1,5)
+#Recurrsion
+# def print2(start,end):
+#     if(start>end):
+#         return
+#     print(end)
+#     print2(start,end-1)
+#     print(end)
+
+# print2(1,5)
+
+
+#Recurssion
+
 
 
 
