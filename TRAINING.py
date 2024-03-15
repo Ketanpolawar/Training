@@ -263,8 +263,14 @@
 
 
 #Recurssion
+# def coinprint(coin,str):
+#     if(coin==0):
+#         print(str)
+#         return
+#     coinprint(coin-1,str+"T")
+#     coinprint(coin-1,str+"H")
 
-
+# coinprint(3,"")
 
 
 
