@@ -272,6 +272,43 @@
 
 # coinprint(3,"")
 
+#Day 15-03-24
+
+
+# def partykartehai(s1,s2,i):
+#     if(i>=len(s1)):
+#         print(s2)
+#         return
+#     partykartehai(s1,s2+s1[i],i+1)
+#     partykartehai(s1,s2,i+1)
+
+
+
+# partykartehai("ab","",0)
+
+# def partykartehai(s1,s2,i):
+#     if(i>=len(s1)):
+#         print(s2)
+#         return
+#     partykartehai(s1,s2+s1[i],i+1)
+#     partykartehai(s1,s2,i+1)
+#     partykartehai(s1,s2+str(ord(s1[i])),i+1)
+
+# partykartehai("ab","",0)
+
+
+def jump(s,j):
+    if(j==0):
+        print(s)
+        return
+    elif(j<0):
+        return#return statement returns the control to the previous 
+
+    jump(s+"1",j-1)
+    jump(s+"2",j-2)
+    jump(s+"3",j-3)
+
+jump("",5)
 
 
 
