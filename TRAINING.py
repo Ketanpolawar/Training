@@ -296,21 +296,40 @@
 
 # partykartehai("ab","",0)
 
+#
+# def jump(s,j):
+#     if(j==0):
+#         print(s)
+#         return
+#     elif(j<0):
+#         return#return statement returns the control to the previous 
 
-def jump(s,j):
-    if(j==0):
-        print(s)
-        return
-    elif(j<0):
-        return#return statement returns the control to the previous 
+#     jump(s+"1",j-1)
+#     jump(s+"2",j-2)
+#     jump(s+"3",j-3)
 
-    jump(s+"1",j-1)
-    jump(s+"2",j-2)
-    jump(s+"3",j-3)
-
-jump("",5)
-
-
+# jump("",5)
 
 
+# def jump1(s,j,a):
+#     if(j==0):
+#         print(s)
+#         return
+#     elif(j<0):
+#         return#return statement returns the control to the previous 
+#     for i in range(0,len(a)):
+#         jump1(s+str(a[i]),j-(i+1),a)
+# jump1("",5,[1,2,3])
 
+
+
+# def reach(fr,fc,s,ir,ic):
+#     if(ir>fr)or(ic>fc):
+#         return
+#     elif(fr==ir and fc==ic):
+#         print(s)
+#         return
+#     reach(fr,fc,s+"R",ir,ic+1)
+#     reach(fr,fc,s+"D",ir+1,ic)
+
+# reach(2,2,"",0,0)
