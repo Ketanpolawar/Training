@@ -333,3 +333,32 @@
 #     reach(fr,fc,s+"D",ir+1,ic)
 
 # reach(2,2,"",0,0)
+
+
+# def febo(i):
+#     if(i==0 ):
+#         return 0
+#     elif(i==1):
+#         return 1
+#     else:
+#         return(febo(i-1)+febo(i-2))
+    
+# f=febo(9)
+# print(f)
+
+
+# def check(n,temp,open,close,list):
+#     if(open == close == n):
+#         list.append(temp)
+#         print(temp)
+#         return
+#     if(open>n or close>open):
+#         return
+    
+#     check(n,temp +"(",open+1,close,list)
+#     check(n,temp +")",open,close+1,list)
+    
+# check(3,"",0,0,[])
+
+
+
