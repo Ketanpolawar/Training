@@ -30,6 +30,9 @@ class Main {
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
 public class LinkedList{
     public static void main(String[] args){
         
@@ -38,6 +41,8 @@ public class LinkedList{
         obj.addLast(2);
         obj.addLast(3);
         obj.addLast(4);
+        obj.addFirst(5);
+        obj.removefirst();
         obj.display();
     }
     
@@ -70,6 +75,40 @@ public void display(){
     while(temp!=null){
         System.out.print(temp.data+"=>");
         temp=temp.next;
+    }
+}
+
+public void addFirst(int val){
+    Node obj=new Node(val);
+    obj.next=head;
+    head=obj;
+    
+}
+
+public void removelast(){
+    
+    Node prev=null;
+    Node curr=head;
+    
+    while(curr.next!=null){
+        prev=curr;
+        curr =curr.next;
+    }
+    if(prev==null){
+        head=null;
+        return;
+    }
+    prev.next=null;
+    
+}
+
+public void removefirst(){
+    if(head==null){
+        throw new RuntimeException ("Sab Khali hai");
+    }
+    head=head.next;
+}
+}
     }
 }
 }
